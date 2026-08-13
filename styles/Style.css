@@ -67,14 +67,16 @@ body{
     transform: scale(1.1);
 }
 .hero{
-    height: 400px;
+    height: 450px;
     background-image: url(/image1.jpg);
     background-size: cover;
     display: flex;
+    margin-bottom: 40px;
 }
 .hero-inner{
-    margin: 20px;
-padding: 15%;
-margin-top:20%;
-
+    margin: 9px;
+padding: 8%;
+}
+.hero-section{
+    color: #ff6b00;
 }
