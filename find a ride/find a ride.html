@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page">
+        <div class="container">
+            
+            <!-- HEADER -->
+            <div class="header">
+                <div class="header-text">
+                    <h1>Find a Ride</h1>
+                    <p>Search for available drivers and choose the best ride that suits your needs.</p>
+                </div>
+                <div class="header-car"></div>
+                
+            </div>
+
+            <!-- SEARCH FORM -->
+            <div class="search-wrap">
+                <div class="grid">
+                    <div class="field">
+                        <label>Pick-up Location</label>
+                        <div class="box">
+                            <span class="material-icons">location_on</span>
+                            <input type="text" placeholder="Enter pick-up location">
+                        </div>
+                    </div>
+
+                    <div class="swap"><span class="material-icons">swap_horiz</span></div>
+
+                    <div class="field">
+                        <label>Destination</label>
+                        <div class="box">
+                            <span class="material-icons">location_on</span>
+                            <input type="text" placeholder="Enter destination">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Date</label>
+                        <div class="box">
+                            <span class="material-icons">calendar_today</span>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Time</label>
+                        <div class="box">
+                            <span class="material-icons">schedule</span>
+                            <input type="time">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Passengers</label>
+                        <div class="box">
+                            <span class="material-icons">person</span>
+                            <select>
+                                <option>1 Passenger</option>
+                                <option>2 Passengers</option>
+                                <option>3 Passengers</option>
+                                <option>4 Passengers</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-orange">Search Rides</button>
+            </div>
+
+            <!-- RESULTS + FILTER -->
+            <div class="content">
+                <div class="results">
+                    <h2>Available Rides</h2>
+                    <div class="ride-card">
+                        <div class="ride-info">
+                            <h4>Toyota Camry</h4>
+                            <p>Bamende to Ndop </p>
+                            <div class="tags">
+                                <span>AC</span><span>4 Seats</span><span>WiFi</span>
+                            </div>
+                        </div>
+                        <div class="ride-price">
+                            
+                            <button class="btn-outline">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="ride-card">
+                        <div class="ride-info">
+                            <h4>Toyota Hiace</h4>
+                            <p>Buea → Bamenda</p>
+                            <div class="tags">
+                                <span>AC</span><span>14 Seats</span><span>Luggage</span>
+                            </div>
+                        </div>
+                        <div class="ride-price">
+                            
+                            <button class="btn-outline">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ride-card">
+    <div class="ride-info">
+        <h4>Toyota Prado SUV</h4>
+        <p>Bamenda → Limbe </p>
+        <div class="tags">
+            <span>AC</span><span>7 Seats</span><span>Luggage</span>
+        </div>
+    </div>
+    <div class="ride-price">
+        
+        <button class="btn-outline">Book Now</button>
+    </div>
+</div>
+
+                <div class="filter">
+                    <div class="filter-top">
+                        <h3>Filter Rides</h3>
+                        <a href="#">Clear All</a>
+                    </div>
+
+                    <div class="f-group">
+                        <label>Price Range</label>
+                        <div class="price-row">
+                            <input type="text" placeholder="FCFA 5,000">
+                            <span>-</span>
+                            <input type="text" placeholder="FCFA 30,000">
+                        </div>
+                        <input type="range" class="range">
+                    </div>
+
+                    <div class="f-group">
+                        <label>Vehicle Type</label>
+                        <label class="check"><input type="checkbox" checked> All Types</label>
+                        <label class="check"><input type="checkbox"> Sedan</label>
+                        <label class="check"><input type="checkbox"> SUV</label>
+                        <label class="check"><input type="checkbox"> Van</label>
+                    </div>
+
+                    <div class="f-group">
+                        <label>Amenities</label>
+                        <label class="check"><input type="checkbox" checked> Air Conditioned</label>
+                        <label class="check"><input type="checkbox"> Wi-Fi</label>
+                        <label class="check"><input type="checkbox"> Luggage Space</label>
+                    </div>
+
+                    <button class="btn-outline full">Apply Filters</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
