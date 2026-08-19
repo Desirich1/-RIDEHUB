@@ -56,6 +56,15 @@ body{
   border-bottom: 2px solid #ff6b00;
   color: #ff6b00;  
 }
+.nav-links a::after{
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    transition: 0.3s ease;
+    color: #ff6b00;
+}
 .signin{
     padding: 5px 7px 5px 7px;
     border: 1px solid black;
