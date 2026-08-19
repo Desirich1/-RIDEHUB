@@ -37,8 +37,6 @@ body{
     height: 40px;
     object-fit: cover;
     border-radius: 40%;
-
-
 }
 .ride:hover{
     transform: scale(1.3);
@@ -444,57 +442,6 @@ padding: 8%;
 .why-card:hover::after {
     width: 30px;
 }
-
-@media (max-width: 1100px) {
-    .why-features {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .why-card {
-        min-height: 300px;
-    }
-}
-
-@media (max-width: 750px) {
-    .why-ridehub {
-        padding: 70px 5%;
-    }
-    .why-header h2 {
-        font-size: 31px;
-    }
-    .why-features {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-}
-
-
-@media (max-width: 520px) {
-    .why-ridehub {
-        padding: 60px 5%;
-    }
-    .why-header {
-        margin-bottom: 40px;
-    }
-    .why-header h4 {
-        font-size: 12px;
-        padding: 6px 13px;
-    }
-  .why-header h2 {
-        font-size: 27px;
-    }
-    .why-features {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-    .why-card {
-        min-height: 280px;
-        padding: 30px 25px;
-    }
-    .why-icon {
-        width: 75px;
-        height: 75px;
-    }
-}
   footer { 
    background: #0d1b2a; 
    color: #ddd; 
@@ -543,9 +490,4 @@ padding: 8%;
    color: #888;
  }
 
-  @media(max-width: 900px){
-    .story-section { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
-    .about-header { flex-direction: column; }
-  }
-
+  
