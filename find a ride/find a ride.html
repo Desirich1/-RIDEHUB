@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="findaride.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
     <nav class="nav" id="nav">
         <div class="nav-inner">
@@ -18,128 +16,77 @@
             </a>
             <div class="nav-links">
                 <a href="/homepage/Index.html">Home</a>
-                <a href="/find a ride/find a ride.html">Fine a Ride</a>
+                <a href="/find a ride/find a ride.html">Find a Ride</a>
                 <a href="#">Drivers</a>
                 <a href="/how it works/how it works.html">How it Works</a>
                 <a href="/About us/About.html">About Us</a>
                 <a href="/contactus/contactus.html">Contact Us</a>
                 <a href="/Signinpage/signin.html"><button class="signin">Login</button></a>
-                <a href="/Regpage/regpage.html"><button class="create">signup</button></a>
+                <a href="/Regpage/regpage.html"><button class="create">Signup</button></a>
             </div>
         </div>
     </nav>
+
     <div class="page">
         <div class="container">
+            
+            <!-- TWO COLUMNS WRAPPER -->
+            <div class="two-col">
 
-            <!-- HEADER -->
-            <div class="header">
-                <div class="header-text">
-                    <h1>Find a Ride</h1>
-                    <p>Search for available drivers and choose the best ride that suits your needs.</p>
-                </div>
-                <div class="header-car"></div>
-
-            </div>
-
-            <!-- SEARCH FORM -->
-            <div class="search-wrap">
-                <div class="grid">
-                    <div class="field">
-                        <label>Pick-up Location</label>
-                        <div class="box">
-                            <span class="material-icons">location_on</span>
-                            <input type="text" placeholder="Enter pick-up location">
+                <!-- LEFT BLOCK = FIND A RIDE -->
+                <div class="main-block">
+                    <div class="header">
+                        <div class="header-text">
+                            <h1>Find a Ride</h1>
+                            <p>Search for available drivers and choose the best ride that suits your needs.</p>
                         </div>
                     </div>
 
-                    <div class="swap"><span class="material-icons">swap_horiz</span></div>
+                    <div class="search-wrap">
+                        <div class="grid">
+                            <div class="field">
+                                <label>Pick-up Location</label>
+                                <div class="box">
+                                    
+                                    <input type="text" placeholder="Enter pick-up location">
+                                </div>
+                            </div>
 
-                    <div class="field">
-                        <label>Destination</label>
-                        <div class="box">
-                            <span class="material-icons">location_on</span>
-                            <input type="text" placeholder="Enter destination">
-                        </div>
-                    </div>
+                            <div class="field">
+                                <label>Destination</label>
+                                <div class="box">
+                                
+                                    <input type="text" placeholder="Enter your destination">
+                                </div>
+                            </div>
 
-                    <div class="field">
-                        <label>Date</label>
-                        <div class="box">
-                            <span class="material-icons">calendar_today</span>
-                            <input type="date">
-                        </div>
-                    </div>
+                            <div class="field">
+                                <label>Date</label>
+                                <div class="box">
+                            
+                                    <input type="date" placeholder="Enter pick-up date">
+                                </div>
+                            </div>
 
-                    <div class="field">
-                        <label>Time</label>
-                        <div class="box">
-                            <span class="material-icons">schedule</span>
-                            <input type="time">
-                        </div>
-                    </div>
+                            <div class="field">
+                                <label>Time</label>
+                                <div class="box">
+                                    
+                                    <input type="time" placeholder="Enter pick-up time">
+                                </div>
+                            </div>
 
-                    <div class="field">
-                        <label>Passengers</label>
-                        <div class="box">
-                            <span class="material-icons">person</span>
-                            <select>
-                                <option>1 Passenger</option>
-                                <option>2 Passengers</option>
-                                <option>3 Passengers</option>
-                                <option>4 Passengers</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn-orange">Search Rides</button>
-            </div>
-
-            <!-- RESULTS + FILTER -->
-            <div class="content">
-                <div class="results">
-                    <h2>Available Rides</h2>
-                    <div class="ride-card">
-                        <div class="ride-info">
-                            <h4>Toyota Camry</h4>
-                            <p>Bamende to Ndop </p>
-                            <div class="tags">
-                                <span>AC</span><span>4 Seats</span><span>WiFi</span>
+                            <div class="field">
+                                <label>Passengers</label>
+                                <div class="box">
+                                    <input type="number and text" placeholder="Enter number of passenger(s)">
+                                </div>
                             </div>
                         </div>
-                        <div class="ride-price">
-
-                            <button class="btn-outline">Book Now</button>
-                        </div>
-                    </div>
-
-                    <div class="ride-card">
-                        <div class="ride-info">
-                            <h4>Toyota Hiace</h4>
-                            <p>Buea → Bamenda</p>
-                            <div class="tags">
-                                <span>AC</span><span>14 Seats</span><span>Luggage</span>
-                            </div>
-                        </div>
-                        <div class="ride-price">
-
-                            <button class="btn-outline">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="ride-card">
-                    <div class="ride-info">
-                        <h4>Toyota Prado SUV</h4>
-                        <p>Bamenda → Limbe </p>
-                        <div class="tags">
-                            <span>AC</span><span>7 Seats</span><span>Luggage</span>
-                        </div>
-                    </div>
-                    <div class="ride-price">
-
-                        <button class="btn-outline">Book Now</button>
                     </div>
                 </div>
 
+                <!-- RIGHT BLOCK = FILTER -->
                 <div class="filter">
                     <div class="filter-top">
                         <h3>Filter Rides</h3>
@@ -173,10 +120,19 @@
 
                     <button class="btn-outline full">Apply Filters</button>
                 </div>
+
+            </div>
+
+            <!-- LONG BUTTON BELOW COVERING BOTH BLOCKS -->
+            <div class="search-action">
+                <button class="btn-orange long">Search Rides</button>
             </div>
 
         </div>
     </div>
+</body>
+</html>
+    
     <footer>
         <div class="container">
             <div class="footer-grid">
