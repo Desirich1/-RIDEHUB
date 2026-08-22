@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How it works</title>
-    <link rel="stylesheet" href="how it works.css">
+
+    <title>Login | RIDEHUB</title>
+
+    <link rel="stylesheet" href="signin.css">
 </head>
+
 <body>
      <nav class="nav" id="nav">
         <div class="nav-inner">
@@ -25,68 +28,83 @@
          </div>
         </div>
     </nav>
-    <section class="How-it-works">
-        <div class="How-it-works">
-        <h1>HOW IT WORKS</h1>
-        <p>
-                Book a comfortable ride from the comfort of your home.
-                Choose your destination, select your ride and let us
-                get you where you need to go.
-            </p>
+    <div class="login-page">
+        <div class="login-info">
+            <div class="logo">
+                RIDE<span>HUB</span>
             </div>
-            <p><strong>Book a drive from home in just four steps</strong></p>
-        <ol class="four-steps">
-            <li>Search</li>
-            <li>Choose</li>
-            <li>Book</li>
-            <li>Ride</li>
-        </ol>
+            <div class="info-content">
+                <span class="small-title">WELCOME BACK</span>
+                <h1>Your ride is waiting.</h1>
+                <p>
+                    Log in to your RIDEHUB account and continue
+                    your journey with a simple and reliable
+                    transportation experience.
+                </p>
+                <div class="info-line"></div>
+                <p class="bottom-text">
+                    Find a ride. Connect with a driver.
+                    Move with confidence.
+                </p>
+            </div>
         </div>
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-number">
-                    01
+        <div class="login-container">
+            <div class="login-box">
+                <div class="form-header">
+                    <h2>Welcome back</h2>
+                    <p>
+                        Please enter your details to continue.
+                    </p>
                 </div>
-                <h3>Enter your location</h3>
-                <p>
-                    Open our website and enter your pickup location
-                    and the destination where you want to go.
-                </p>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email Address
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-label">
+                            <label for="password">Password
+                            </label>
+                            <a href="#">
+                                Forgot password?
+                            </a>
+                        </div>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required>
+
+                    </div>
+                    <div class="remember">
+                        <input
+                            type="checkbox"
+                            id="remember">
+                        <label for="remember">
+                            Remember me
+                        </label>
+                    </div>
+                    <button
+                        type="submit"
+                        class="login-button">
+                        Log In
+                    </button>
+                    <p class="signup-text">
+                        Don't have an account?
+                        <a href="signup.html">
+                            Create an account
+                        </a>
+                    </p>
+                </form>
             </div>
-            <div class="step-card">
-                <div class="step-number">
-                 02
-                </div>
-                <h3>Choose your ride</h3>
-                <p>
-                    View available vehicles and choose the ride
-                    that best matches your needs and budget.
-                </p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">
-                    03
-                </div>
-                <h3>Confirm your booking</h3>
-                <p>
-                    Check your pickup location, destination,
-                    ride type and fare, then confirm your booking.
-                </p>
-                </div>
-            <div class="step-card">
-                <div class="step-number">
-                    04
-                </div>
-                <h3>Enjoy the Ride</h3>
-                <p>
-                    Meet your driver, enjoy your trip and rate
-                    your experience when you arrive.
-                </p>
-            </div>
-        <a href="#" class="cta-btn">
-            Book a Ride </a>
-    </section>
-     <footer>
+        </div>
+    </div>
+    <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
