@@ -243,13 +243,13 @@ padding: 8%;
   footer { 
    background: #0d1b2a; 
    color: #ddd; 
-   padding: 30px 0 10px; 
-}
+   padding: 30px 0 20px; 
+  }
   .footer-grid { 
    display: grid; 
    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
    gap: 30px; 
-   margin-bottom: 10px;
+   margin-bottom: 30px;
  }
   .footer-brand h2 {
     color: #f97316;
@@ -286,6 +286,11 @@ padding: 8%;
    border-top: 1px solid #1e293b; 
    font-size: 13px; 
    color: #888;
+ }
+ @media(max-width:600px){
+  .intro{
+    grid-template-columns: 1fr;
+  }
  }
 
   
