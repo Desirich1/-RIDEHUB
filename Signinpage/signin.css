@@ -339,5 +339,102 @@ padding: 8%;
    font-size: 13px; 
    color: #888;
  }
-
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #101C30;
+    cursor: pointer;
+}
+.nav2 {
+    display: none;
+}
+.nav-links2 {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+.nav-links2 a {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #101C30;
+}
+.nav-links2 button {
+    width: 100%;
+    margin-top: 5px;
+}
+.nav2.active {
+    display: block;
+}
+@media screen and (max-width: 770px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .login-page {
+        flex-direction: column;
+    }
+   .login-info {
+        width: 100%;
+        margin: 20px;
+        padding: 35px 6%;
+    }
+    .info-content h1 {
+        font-size: 34px;
+    }
+    .info-content > p {
+        font-size: 14px;
+    }
+    .login-container {
+        width: 100%;
+        padding: 40px 6%;
+    }
+    .login-box {
+        padding: 30px;
+    }
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-col {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .info-content h1 {
+        font-size: 26px;
+    }
+    .form-header h2 {
+        font-size: 22px;
+    }
+    .login-box {
+        padding: 22px;
+    }
+    .nav-links2 {
+        top: 60px;
+    }
+}
+  @media screen and (max-width: 300px) {
+    .info-content h1 {
+        font-size: 10px;
+    }
+    .form-header h2 {
+        font-size: 15px;
+    }
+    .login-box {
+        padding: 15px;
+    }
+    .nav-links2 {
+        top: 40px;
+    }
+}
   
