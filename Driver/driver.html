@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RideHub drivers page">
+    <title>RideHub - Drivers</title>
+
+    <link rel="stylesheet" href="driver.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="/Driver/image/image.png" class="ride">
+            <img class="ride-image" src="/Driver/image/image.png" alt="image5">
+            RIDE <span style="color:#ff6b00;">HUB</span>
+         </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="mainNav" aria-label="Main navigation">
+            <a href="/homepage/Index.html">Home</a>
+            <a href="/Ride/ride.html">Find a Ride</a>
+            <a href="/Driver/driver.html">Drivers</a>
+            <a href="/how it works/how it works.html">How It Works</a>
+            <a href="/Regpage/regpage.html">Register</a>
+            <a href="/Contact/contact.html">Contact Us</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <button class="login" type="button">
+                <i class="fa-solid fa-user"></i> Login
+            </button>
+
+            <button class="signup" type="button">
+                <i class="fa-solid fa-user-plus"></i> Sign Up
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="eyebrow">SAFE • VERIFIED • RELIABLE</span>
+            <h1>Our Drivers</h1>
+            <p>
+                Browse and choose from our network of verified drivers.
+                Safe, reliable, and ready to take you there.
+            </p>
+        </div>
+    </section>
+
+    <main class="container">
+        <form class="search-box">
+            <div class="search-field">
+                <label for="pickup">Pickup Location</label>
+                <input id="pickup" type="text" placeholder="Enter pickup location">
+            </div>
+
+            <div class="search-field">
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder="Where are you going?">
+            </div>
+
+            <div class="search-field">
+                <label for="date">Date</label>
+                <input id="date" type="date">
+            </div>
+
+            <button class="search-btn" type="submit">
+                <i class="fa-solid fa-search"></i> Search
+            </button>
+        </form>
+
+        <div class="results-header">
+            <p>We found <strong>24 available drivers</strong></p>
+
+            <div class="sort">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option>Recommended</option>
+                    <option>Highest Rated</option>
+                    <option>Lowest Price</option>
+                    <option>Most Trips</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="drivers-grid" id="">
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="James N. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            James N.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Toyota Camry 2019</p>
+                        <p>👥 4 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="Michael L. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            Michael L.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Nissan X-Trail 2021</p>
+                        <p>👥 5 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="David K. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            David K.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Hyundai H1 2020</p>
+                        <p>👥 8 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="Richard M. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            Richard M.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Kia Sportage 2019</p>
+                        <p>👥 5 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="Patrick O. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            Patrick O.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Honda CR-V 2020</p>
+                        <p>👥 5 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+
+            <article class="driver-card">
+                <div class="driver-top">
+                    <img src="" alt="Samuel B. profile photo" loading="lazy">
+                    <div class="driver-info">
+                        <h3>
+                            Samuel B.
+                            <i class="fa-solid fa-circle-check verified" aria-label="Verified driver"></i>
+                        </h3>
+                        <p>🚗 Toyota Hiace 2018</p>
+                        <p>👥 14 Seats</p>
+                        <p>❄️ Air Conditioned</p>
+                        <p>📍 Bambili, Bamenda</p>
+                    </div>
+                    <span class="available">Available</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <h3>FCFA 0.00</h3>
+                        <small>Total price</small>
+                    </div>
+                    <button type="button" class="view-btn">View Profile</button>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <script src="jvs.js"></script>
+</body>
+</html>
+```
+
+
