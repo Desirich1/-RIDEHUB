@@ -1,12 +1,9 @@
 const hamburger = document.getElementById('hamburger');
-const nav2 = document.querySelector('.nav2');
+const navLinks = document.querySelector('.nav-links');
 
-// nav2.style.display = 'none';
-
-hamburger.addEventListener('click', () => {
-    if (nav2.style.display === 'none') {
-        nav2.style.display = 'block';
-    } else {
-        nav2.style.display = 'none';
-    }
-});
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+}
