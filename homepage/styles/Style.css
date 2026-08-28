@@ -9,7 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-}
+} 
 .nav{
     position: sticky;
     top: 0;
@@ -512,29 +512,47 @@ padding: 4%;
     display: none;
 }
 .nav-links2 {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
-    position: absolute;
+    position:absolute ;
     top: 70px;
     left: 0;
     width: 100%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     z-index: 999;
+    text-align: center;
+    justify-content: center;
 }
 .nav-links2 a {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-decoration: none;
     color: #101C30;
+    justify-content: center;
+    text-align: center;
 }
 .nav-links2 button {
     width: 100%;
     margin-top: 5px;
+    background-color: #ff6b00;
+    border: 0;
+    padding: 6px 8px;
+    border-radius: 3px;
 }
 .nav2.active {
     display: block;
 }
-
+.nav-links2 a::after{
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    transition: 0.3s ease;
+    color: #ff6b00;
+}
 @media screen and (max-width: 770px) {
     .nav-links {
         display: none;
@@ -573,17 +591,57 @@ padding: 4%;
     }
 }
 @media screen and (max-width: 480px) {
+    .hero{ 
+        height:auto ;
+        padding: 60px 20px;
+    }
     .hero-inner h1 {
         font-size: 20px;
     }
+    .hero-section{
+        font-size: 25px;
+    }
     .hero-inner p {
-        font-size: 14px;
+        font-size: 15px;
     }
-    .more h1 {
-        font-size: 18px;
+    .more-info{
+        padding: 15px;
     }
-    .more h2 {
+    .more{
+        padding-bottom: 10px;
+    }
+    .more-info h1 {
         font-size: 20px;
+    }
+    .more-info h2 {
+        font-size: 25px;
+    }
+    .more-info p{
+        font-size: 15px;
+    }
+    .hero-image{
+        height: auto;
+        width: 80%;
+        margin: 0;
+        padding: 10px;
+    }
+    .luxury{
+        padding: 15px;
+    }
+    .exclusive{
+        padding-bottom: 10px;
+    }
+    .exclusive h1 {
+        font-size: 20px;
+    }
+    .luxury h2 {
+        font-size: 25px;
+    }
+    .luxury p{
+        font-size: 15px;
+    }
+    .luxury-image{
+        margin: 0;
     }
     .why-card {
         width: 100%;
@@ -591,6 +649,16 @@ padding: 4%;
     }
     .nav-links2 {
         top: 60px;
+    }
+    .why-features{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .footer-grid{
+        display: flex;
+        flex-direction: column;
     }
 }
   
