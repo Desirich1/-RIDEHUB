@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --ink: #102039;
+    --muted: #64748b;
+    --orange: #f56818;
+    --orange-dark: #cf4f0c;
+    --orange-soft: #fff1e8;
+    --surface: #ffffff;
+    --canvas: #f7f9fc;
+    --line: #e5eaf1;
+    --shadow: 0 18px 45px rgba(16, 32, 57, 0.09);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    color: var(--ink);
+    background: var(--canvas);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .ride, .logo {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+}
+
+button, a {
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid rgba(245, 104, 24, 0.3);
+    outline-offset: 2px;
+}
+
+.nav + * {
+    animation: page-enter 500ms ease both;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: auto 7% -70px auto;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(245, 104, 24, 0.25);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-inner, .hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+body:has(.hero-inner) .hero {
+    min-height: min(560px, calc(100vh - 74px));
+    align-items: center;
+    background-position: center;
+}
+
+body:has(.hero-inner) .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.72) 42%, rgba(255, 255, 255, 0.05) 78%);
+}
+
+body:has(.hero-inner) .hero-inner {
+    width: min(620px, 88%);
+    margin: 0;
+    padding: 8% 0 8% max(6%, calc((100vw - 1180px) / 2));
+}
+
+body:has(.hero-inner) .hero-inner p {
+    max-width: 500px;
+    margin-top: 18px;
+}
+
+body:has(.hero-inner) > .get-acc {
+    position: relative;
+    z-index: 2;
+    margin: -30px 0 28px max(6%, calc((100vw - 1180px) / 2));
+}
+
+.hero-inner h1, .hero-text h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.03em;
+}
+
+.get-acc, .transport-btn, .drivers-btn, .start-btn, .cta-btn,
+.btn-orange, .btn, .login-button, .signup-button, .search-btn, .view-btn {
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--orange);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(245, 104, 24, 0.2);
+}
+
+.get-acc:hover, .transport-btn:hover, .drivers-btn:hover, .start-btn:hover,
+.cta-btn:hover, .btn-orange:hover, .btn:hover, .login-button:hover,
+.signup-button:hover, .search-btn:hover, .view-btn:hover {
+    background: var(--orange-dark);
+    transform: translateY(-2px);
+}
+
+.more-info, .luxury, .start {
+    gap: clamp(32px, 6vw, 84px);
+    padding: clamp(56px, 8vw, 100px) max(6%, calc((100% - 1180px) / 2));
+    background: var(--surface);
+}
+
+.more-info:nth-of-type(even), .start {
+    background: var(--canvas);
+}
+
+.more, .exclusive, .start-up {
+    max-width: 560px;
+}
+
+.more h1, .more h2, .exclusive h2, .start-up h2 {
+    color: var(--ink);
+    letter-spacing: -0.03em;
+}
+
+.more p, .exclusive p, .start-up p {
+    color: var(--muted);
+}
+
+.image2-container, .luxury > div:last-child, .start > div:last-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image, .luxury-image, .start-image {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.why-ridehub, .How-it-works {
+    background: var(--canvas);
+}
+
+.why-ridehub {
+    padding: clamp(56px, 8vw, 100px) max(6%, calc((100% - 1180px) / 2));
+}
+
+.why-header {
+    margin-bottom: 36px;
+}
+
+.why-header h2, .why-header h4 {
+    color: var(--ink);
+}
+
+.why-features {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.why-card, .step-card, .main-block, .filter, .info-card, .form-card,
+.login-box, .signup-box {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.why-card {
+    min-height: 190px;
+    padding: 24px;
+}
+
+.why-card:hover, .step-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(245, 104, 24, 0.45);
+}
+
+.why-card h3, .step-card h3 {
+    color: var(--ink);
+}
+
+.why-card p, .step-card p {
+    color: var(--muted);
+}
+
+.page {
+    min-height: calc(100vh - 74px);
+    padding: clamp(36px, 6vw, 72px) 20px;
+    background: var(--canvas);
+}
+
+.container {
+    width: min(1180px, 100%);
+    margin-inline: auto;
+}
+
+.main-block, .filter {
+    padding: clamp(22px, 3vw, 32px);
+}
+
+.header h1, .filter-top h3 {
+    color: var(--ink);
+}
+
+.header p, .field label, .f-group > label {
+    color: var(--muted);
+}
+
+.box, .price-row input, .search-field input, .form-group input, .form-group select, textarea {
+    border-color: var(--line);
+    border-radius: 8px;
+}
+
+.box:focus-within, .price-row input:focus, .search-field input:focus, .form-group input:focus, .form-group select:focus, textarea:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(245, 104, 24, 0.12);
+}
+
+footer {
+    background: var(--ink);
+}
+
+.footer-brand h2, .footer-col a:hover {
+    color: var(--orange);
+}
+
+.footer-col a, .footer-brand p {
+    transition: color 180ms ease;
+}
+
+.login-page, .signup-page {
+    min-height: calc(100vh - 74px);
+    background: var(--canvas);
+}
+
+.login-info, .signup-info {
+    background: var(--ink);
+    box-shadow: var(--shadow);
+}
+
+.login-box, .signup-box {
+    box-shadow: var(--shadow);
+}
+
+.form-header h2, .form-group label, .form-header p {
+    color: var(--ink);
+}
+
+.form-group input, .form-group select {
+    background: #fbfcfe;
+}
+
+@keyframes page-enter {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    .why-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .more-info, .luxury, .start {
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 680px) {
+    .more-info, .luxury, .start, .login-page, .signup-page {
+        flex-direction: column;
+    }
+
+    .more-info, .luxury, .start {
+        padding: 54px 6%;
+    }
+
+    .hero-image, .luxury-image, .start-image {
+        height: 260px;
+    }
+
+    body:has(.hero-inner) .hero {
+        min-height: 500px;
+    }
+
+    body:has(.hero-inner) .hero-inner {
+        width: 90%;
+        padding: 8% 0 8% 6%;
+    }
+
+    body:has(.hero-inner) .hero-inner h1 {
+        font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+    body:has(.hero-inner) .hero-inner p {
+        max-width: 390px;
+        font-size: 1rem;
+    }
+
+    .why-features {
+        grid-template-columns: 1fr;
+    }
+}
