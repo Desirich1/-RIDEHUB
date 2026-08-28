@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     background: var(--canvas);
 }
@@ -174,7 +174,6 @@ body {
         height: 280px;
     }
 }
-=======
 * { 
       margin: 0;
        padding: 0;
@@ -291,7 +290,6 @@ padding: 8%;
   .container { 
     max-width: 1200px; margin: 0 auto; padding: 0 20px; 
   }
-  /* Header Section */
   .about-header {
      padding: 60px 0; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; 
     }
@@ -481,9 +479,11 @@ padding: 8%;
    font-size: 13px; 
    color: #888;
  }
-@media(max-width:600px){
-  
+@media(max-width:480px){
+  .footer-grid{
+    display: flex;
+    flex-direction: column;
+  }
 }
   
 
->>>>>>> 3ffd60aa0cd71f122318b8c2f2c77c164251b1d5

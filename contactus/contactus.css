@@ -286,11 +286,132 @@ padding: 8%;
    font-size: 13px; 
    color: #888;
  }
- @media(max-width:600px){
-  .intro{
-    grid-template-columns: 1fr;
+
+@media (max-width: 768px) {
+    body > .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .intro {
+        width: 100%;
+        text-align: left;
+    }
+    .intro .eyebrow {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .intro h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .intro > p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .info-card {
+        width: 100%;
+        margin-top: 25px;
+        padding: 20px;
+    }
+    .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+    .info-item:last-child {
+        margin-bottom: 0;
+    }
+    .info-item .icon {
+        flex-shrink: 0;
+    }
+    .info-item h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .info-item p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .form-card {
+        width: 100%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+    .form-card h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .form-group.full {
+        grid-column: auto;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .form-group textarea {
+        min-height: 140px;
+        resize: vertical;
+    }
+    .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
   }
- }
+@media (max-width: 480px) {
+
+    body > .container {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+    .intro h1 {
+        font-size: 28px;
+    }
+    .intro > p {
+        font-size: 14px;
+    }
+    .info-card {
+        padding: 18px 15px;
+    }
+    .form-card {
+        padding: 22px 15px;
+    }
+    .form-card h2 {
+        font-size: 21px;
+    }
+    .info-item {
+        gap: 12px;
+    }
+    .info-item h3 {
+        font-size: 15px;
+    }
+    .info-item p {
+        font-size: 12px;
+    }
+    .footer-grid{
+      display: flex;
+      flex-direction: column;
+    }
+}
 
   
 
