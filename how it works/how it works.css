@@ -124,23 +124,33 @@ padding: 8%;
     margin-bottom: 20px;
     color: #FF6B00;
     text-shadow: 2px 2px #101c30;
-    text-align: left;
+    text-align: center;
 }
 .How-it-works > p {
     max-width: 900px;
     margin: 20px;
+    margin-bottom: 20px;
     color: black;
     font-size: 17px;
 }
-.How-it-works > p strong {
+.How-it-works, p {
+    text-align: center;
     color: #222222;
     font-size: 20px;
 }
+.four, p {
+    max-width: 900px;
+    margin: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
 .four-steps {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 20px;
     list-style: none;
     margin: 40px auto 60px;
     max-width: 1000px;
