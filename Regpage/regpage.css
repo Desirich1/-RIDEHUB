@@ -425,19 +425,9 @@ padding: 8%;
     .nav-links2 {
         top: 60px;
     }
-}
-@media screen and (max-width: 360px) {
-    .info-content h1 {
-        font-size: 20px;
-    }
-    .form-header h2 {
-        font-size: 15px;
-    }
-    .signup-box {
-        padding: 15px;
-    }
-    .nav-links2 {
-        top: 40px;
+     .footer-grid{
+        display: flex;
+        flex-direction: column;
     }
 }
   
